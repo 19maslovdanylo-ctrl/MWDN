@@ -1,0 +1,107 @@
+version: '3.8'
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+    - 80:80
+    - 443:443
+    volumes:
+    - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+    - fastapi
+    networks:
+    - app-network
+    restart: unless-stopped
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi_app
+    entrypoint: .deploy/bash/entrypoint.sh
+    volumes:
+    - ./src:/app/src
+    - ./logs:/app/logs
+    env_file:
+    - .env
+    depends_on:
+    - db
+    - redis
+    - db_read_replica
+    networks:
+    - app-network
+    restart: unless-stopped
+  db:
+    image: postgres:15-alpine
+    container_name: postgres_db
+    env_file:
+    - .env.db
+    volumes:
+    - postgres_data:/var/lib/postgresql/data
+    - ./.deploy/bash/init-primary.sh:/docker-entrypoint-initdb.d/init-primary.sh
+    ports:
+    - ${DB_PORT:-5432}:5432
+    networks:
+    - app-network
+    restart: unless-stopped
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - pg_isready -U ${POSTGRES_USER}
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+    - POSTGRES_REPLICATION_USER=${POSTGRES_REPLICATION_USER:-replicator}
+    - POSTGRES_REPLICATION_PASSWORD=${POSTGRES_REPLICATION_PASSWORD:-replicator_password}
+  db_read_replica:
+    image: postgres:15-alpine
+    container_name: postgres_db_read_replica
+    env_file:
+    - .env.db
+    volumes:
+    - postgres_read_replica_data:/var/lib/postgresql/data
+    - ./.deploy/bash/read-replica-entrypoint.sh:/usr/local/bin/read-replica-entrypoint.sh
+    ports:
+    - ${DB_READ_REPLICA_PORT:-5433}:5432
+    networks:
+    - app-network
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+    - POSTGRES_PRIMARY_HOST=db
+    - POSTGRES_PRIMARY_PORT=5432
+    - POSTGRES_REPLICATION_USER=${POSTGRES_REPLICATION_USER:-replicator}
+    - POSTGRES_REPLICATION_PASSWORD=${POSTGRES_REPLICATION_PASSWORD:-replicator_password}
+    entrypoint:
+    - /usr/local/bin/read-replica-entrypoint.sh
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - pg_isready -U ${POSTGRES_USER}
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+    - 6379:6379
+    volumes:
+    - redis_data:/data
+    networks:
+    - app-network
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+networks:
+  app-network:
+    driver: bridge
+volumes:
+  postgres_data:
+    driver: local
+  postgres_read_replica_data:
+    driver: local
+  redis_data:
+    driver: local

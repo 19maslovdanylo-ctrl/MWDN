@@ -1,0 +1,306 @@
+2025-12-03 19:49:31,073 - main - INFO - Starting FastAPI application
+2025-12-03 19:49:50,034 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=133.43.37.17
+2025-12-03 19:49:50,069 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 19:49:50,069 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=GB):
+  bidder2 - price 0.65, latency=242ms
+Winner: bidder2 (0.65)
+============================================================
+
+2025-12-03 19:49:50,074 - application.bidding_use_case - INFO - Auction completed: winner=bidder2, price=0.65
+2025-12-03 19:49:51,897 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=133.43.37.17
+2025-12-03 19:49:51,927 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 19:49:51,927 - application.bidding_use_case - WARNING - No valid bids received for supply=supply1, country=GB, but saving for stats
+2025-12-03 19:49:51,928 - application.bidding_use_case - INFO - 
+============================================================
+FAILED Auction for supply1 (country=GB):
+  bidder2 - no bid
+Winner: None (no valid bids)
+============================================================
+
+2025-12-03 19:49:51,934 - application.bidding_use_case - INFO - Failed auction saved for stats: auction_id=2, bids=1
+2025-12-03 19:49:52,837 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=133.43.37.17
+2025-12-03 19:49:52,873 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 19:49:52,873 - application.bidding_use_case - WARNING - No valid bids received for supply=supply1, country=GB, but saving for stats
+2025-12-03 19:49:52,873 - application.bidding_use_case - INFO - 
+============================================================
+FAILED Auction for supply1 (country=GB):
+  bidder2 - no bid
+Winner: None (no valid bids)
+============================================================
+
+2025-12-03 19:49:52,879 - application.bidding_use_case - INFO - Failed auction saved for stats: auction_id=3, bids=1
+2025-12-03 19:49:56,076 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=133.43.347.17
+2025-12-03 19:49:56,108 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 19:49:56,108 - application.bidding_use_case - WARNING - No valid bids received for supply=supply1, country=GB, but saving for stats
+2025-12-03 19:49:56,108 - application.bidding_use_case - INFO - 
+============================================================
+FAILED Auction for supply1 (country=GB):
+  bidder2 - no bid
+Winner: None (no valid bids)
+============================================================
+
+2025-12-03 19:49:56,113 - application.bidding_use_case - INFO - Failed auction saved for stats: auction_id=4, bids=1
+2025-12-03 19:49:57,294 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=133.43.347.17
+2025-12-03 19:49:57,329 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 19:49:57,329 - application.bidding_use_case - WARNING - No valid bids received for supply=supply1, country=GB, but saving for stats
+2025-12-03 19:49:57,329 - application.bidding_use_case - INFO - 
+============================================================
+FAILED Auction for supply1 (country=GB):
+  bidder2 - TIMEOUT (latency=502ms)
+Winner: None (no valid bids)
+============================================================
+
+2025-12-03 19:49:57,335 - application.bidding_use_case - INFO - Failed auction saved for stats: auction_id=5, bids=1
+2025-12-03 19:49:57,785 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=133.43.347.17
+2025-12-03 19:49:57,820 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 19:49:57,820 - application.bidding_use_case - WARNING - No valid bids received for supply=supply1, country=GB, but saving for stats
+2025-12-03 19:49:57,821 - application.bidding_use_case - INFO - 
+============================================================
+FAILED Auction for supply1 (country=GB):
+  bidder2 - TIMEOUT (latency=526ms)
+Winner: None (no valid bids)
+============================================================
+
+2025-12-03 19:49:57,827 - application.bidding_use_case - INFO - Failed auction saved for stats: auction_id=6, bids=1
+2025-12-03 19:50:00,796 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=123.43.347.17
+2025-12-03 19:50:00,829 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 19:50:00,829 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=GB):
+  bidder2 - price 0.83, latency=103ms
+Winner: bidder2 (0.83)
+============================================================
+
+2025-12-03 19:50:00,832 - application.bidding_use_case - INFO - Auction completed: winner=bidder2, price=0.83
+2025-12-03 19:50:01,407 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=123.43.347.17
+2025-12-03 19:50:01,440 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 19:50:01,441 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=GB):
+  bidder2 - price 0.19, latency=26ms
+Winner: bidder2 (0.19)
+============================================================
+
+2025-12-03 19:50:01,444 - application.bidding_use_case - INFO - Auction completed: winner=bidder2, price=0.19
+2025-12-03 19:50:01,951 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=123.43.347.17
+2025-12-03 19:50:01,994 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 19:50:01,994 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=GB):
+  bidder2 - price 0.02, latency=205ms
+Winner: bidder2 (0.02)
+============================================================
+
+2025-12-03 19:50:01,997 - application.bidding_use_case - INFO - Auction completed: winner=bidder2, price=0.02
+2025-12-03 19:50:43,589 - application.stats_use_case - INFO - Fetching all statistics
+2025-12-03 19:50:43,629 - application.stats_use_case - INFO - Statistics retrieved successfully for 2 supplies
+2025-12-03 19:51:10,522 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=123.43.347.172
+2025-12-03 19:51:10,550 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:10,551 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - price 0.89, latency=293ms
+  bidder3 - no bid
+Winner: bidder1 (0.89)
+============================================================
+
+2025-12-03 19:51:10,554 - application.bidding_use_case - INFO - Auction completed: winner=bidder1, price=0.89
+2025-12-03 19:51:10,923 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=123.43.347.172
+2025-12-03 19:51:10,955 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:10,956 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - price 0.50, latency=109ms
+  bidder3 - no bid
+Winner: bidder1 (0.50)
+============================================================
+
+2025-12-03 19:51:10,959 - application.bidding_use_case - INFO - Auction completed: winner=bidder1, price=0.5
+2025-12-03 19:51:11,429 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=123.43.347.172
+2025-12-03 19:51:11,461 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:11,461 - application.bidding_use_case - WARNING - No valid bids received for supply=supply1, country=US, but saving for stats
+2025-12-03 19:51:11,462 - application.bidding_use_case - INFO - 
+============================================================
+FAILED Auction for supply1 (country=US):
+  bidder1 - no bid
+  bidder3 - no bid
+Winner: None (no valid bids)
+============================================================
+
+2025-12-03 19:51:11,468 - application.bidding_use_case - INFO - Failed auction saved for stats: auction_id=12, bids=2
+2025-12-03 19:51:18,061 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=123.43.37.12
+2025-12-03 19:51:18,094 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:18,094 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - price 0.79, latency=488ms
+  bidder3 - no bid
+Winner: bidder1 (0.79)
+============================================================
+
+2025-12-03 19:51:18,098 - application.bidding_use_case - INFO - Auction completed: winner=bidder1, price=0.79
+2025-12-03 19:51:18,426 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=123.43.37.12
+2025-12-03 19:51:18,453 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:18,454 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - price 0.29, latency=405ms
+  bidder3 - price 0.75, latency=275ms
+Winner: bidder3 (0.75)
+============================================================
+
+2025-12-03 19:51:18,457 - application.bidding_use_case - INFO - Auction completed: winner=bidder3, price=0.75
+2025-12-03 19:51:18,860 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=123.43.37.12
+2025-12-03 19:51:18,889 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:18,889 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - no bid
+  bidder3 - price 0.79, latency=246ms
+Winner: bidder3 (0.79)
+============================================================
+
+2025-12-03 19:51:18,893 - application.bidding_use_case - INFO - Auction completed: winner=bidder3, price=0.79
+2025-12-03 19:51:22,954 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=13.43.37.12
+2025-12-03 19:51:22,985 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:22,985 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - price 0.25, latency=397ms
+  bidder3 - price 0.53, latency=267ms
+Winner: bidder3 (0.53)
+============================================================
+
+2025-12-03 19:51:22,989 - application.bidding_use_case - INFO - Auction completed: winner=bidder3, price=0.53
+2025-12-03 19:51:23,537 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=13.43.37.12
+2025-12-03 19:51:23,572 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:23,572 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - price 0.68, latency=121ms
+  bidder3 - price 0.60, latency=390ms
+Winner: bidder1 (0.68)
+============================================================
+
+2025-12-03 19:51:23,576 - application.bidding_use_case - INFO - Auction completed: winner=bidder1, price=0.68
+2025-12-03 19:51:24,054 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=13.43.37.12
+2025-12-03 19:51:24,086 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:24,087 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - price 0.65, latency=349ms
+  bidder3 - price 0.44, latency=116ms
+Winner: bidder1 (0.65)
+============================================================
+
+2025-12-03 19:51:24,090 - application.bidding_use_case - INFO - Auction completed: winner=bidder1, price=0.65
+2025-12-03 19:51:27,523 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=13.435.37.12
+2025-12-03 19:51:27,554 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:27,555 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - price 0.16, latency=490ms
+  bidder3 - price 0.73, latency=383ms
+Winner: bidder3 (0.73)
+============================================================
+
+2025-12-03 19:51:27,558 - application.bidding_use_case - INFO - Auction completed: winner=bidder3, price=0.73
+2025-12-03 19:51:28,027 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=13.435.37.12
+2025-12-03 19:51:28,057 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:28,057 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - no bid
+  bidder3 - price 0.41, latency=19ms
+Winner: bidder3 (0.41)
+============================================================
+
+2025-12-03 19:51:28,061 - application.bidding_use_case - INFO - Auction completed: winner=bidder3, price=0.41
+2025-12-03 19:51:29,188 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=13.435.37.12
+2025-12-03 19:51:29,220 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:29,221 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - price 0.94, latency=94ms
+  bidder3 - price 0.27, latency=291ms
+Winner: bidder1 (0.94)
+============================================================
+
+2025-12-03 19:51:29,225 - application.bidding_use_case - INFO - Auction completed: winner=bidder1, price=0.94
+2025-12-03 19:51:31,651 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=13.435.317.12
+2025-12-03 19:51:31,681 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:31,681 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - price 0.78, latency=343ms
+  bidder3 - price 0.77, latency=200ms
+Winner: bidder1 (0.78)
+============================================================
+
+2025-12-03 19:51:31,685 - application.bidding_use_case - INFO - Auction completed: winner=bidder1, price=0.78
+2025-12-03 19:51:32,173 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=13.435.317.12
+2025-12-03 19:51:32,200 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:32,201 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - no bid
+  bidder3 - price 0.94, latency=427ms
+Winner: bidder3 (0.94)
+============================================================
+
+2025-12-03 19:51:32,205 - application.bidding_use_case - INFO - Auction completed: winner=bidder3, price=0.94
+2025-12-03 19:51:32,777 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=US, ip=13.435.317.12
+2025-12-03 19:51:32,808 - application.bidding_use_case - INFO - Found 2 eligible bidders: ['bidder1', 'bidder3']
+2025-12-03 19:51:32,808 - application.bidding_use_case - INFO - 
+============================================================
+Auction for supply1 (country=US):
+  bidder1 - no bid
+  bidder3 - price 0.57, latency=314ms
+Winner: bidder3 (0.57)
+============================================================
+
+2025-12-03 19:51:32,812 - application.bidding_use_case - INFO - Auction completed: winner=bidder3, price=0.57
+2025-12-03 19:53:14,452 - application.stats_use_case - INFO - Fetching all statistics
+2025-12-03 19:53:14,482 - application.stats_use_case - INFO - Statistics retrieved successfully for 2 supplies
+2025-12-03 20:07:45,028 - application.stats_use_case - INFO - Fetching all statistics
+2025-12-03 20:07:45,081 - application.stats_use_case - INFO - Statistics retrieved successfully for 2 supplies
+2025-12-03 20:07:59,071 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=13.435.317.12
+2025-12-03 20:07:59,102 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 20:07:59,103 - application.bidding_use_case - WARNING - No valid bids received for supply=supply1, country=GB, but saving for stats
+2025-12-03 20:07:59,103 - application.bidding_use_case - INFO - 
+============================================================
+FAILED Auction for supply1 (country=GB):
+  bidder2 - TIMEOUT (latency=87ms)
+Winner: None (no valid bids)
+============================================================
+
+2025-12-03 20:07:59,109 - application.bidding_use_case - INFO - Failed auction saved for stats: auction_id=25, bids=1
+2025-12-03 20:08:05,014 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=13.435.317.12
+2025-12-03 20:08:05,046 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 20:08:05,047 - application.bidding_use_case - WARNING - No valid bids received for supply=supply1, country=GB, but saving for stats
+2025-12-03 20:08:05,047 - application.bidding_use_case - INFO - 
+============================================================
+FAILED Auction for supply1 (country=GB):
+  bidder2 - no bid
+Winner: None (no valid bids)
+============================================================
+
+2025-12-03 20:08:05,053 - application.bidding_use_case - INFO - Failed auction saved for stats: auction_id=26, bids=1
+2025-12-03 20:08:06,759 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=13.435.317.12
+2025-12-03 20:08:06,787 - application.bidding_use_case - INFO - Found 1 eligible bidders: ['bidder2']
+2025-12-03 20:08:06,787 - application.bidding_use_case - WARNING - No valid bids received for supply=supply1, country=GB, but saving for stats
+2025-12-03 20:08:06,787 - application.bidding_use_case - INFO - 
+============================================================
+FAILED Auction for supply1 (country=GB):
+  bidder2 - TIMEOUT (latency=78ms)
+Winner: None (no valid bids)
+============================================================
+
+2025-12-03 20:08:06,793 - application.bidding_use_case - INFO - Failed auction saved for stats: auction_id=27, bids=1
+2025-12-03 20:08:29,591 - application.bidding_use_case - INFO - Starting auction for supply=supply1, country=GB, ip=13.435.317.12
+2025-12-03 20:08:29,593 - application.bidding_use_case - WARNING - Rate limit exceeded for IP: 13.435.317.12
+2025-12-03 20:08:34,504 - application.stats_use_case - INFO - Fetching all statistics
+2025-12-03 20:08:34,537 - application.stats_use_case - INFO - Statistics retrieved successfully for 2 supplies
+2025-12-03 20:18:55,798 - main - INFO - Shutting down FastAPI application
