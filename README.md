@@ -25,7 +25,7 @@ A high-performance, production-ready real-time bidding (RTB) service built with 
 
    ```bash
    git clone https://github.com/19maslovdanylo-ctrl/MWDN.git
-   cd test-task
+   cd MWDN
    ```
 
 2. **Copy environment configuration files**
